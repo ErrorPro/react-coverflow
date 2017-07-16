@@ -4,6 +4,7 @@
  * Author: andyyou
  */
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import Radium from 'radium';
 import styles from './stylesheets/coverflow';
@@ -314,11 +315,11 @@ class Coverflow extends Component {
 };
 
 Coverflow.propTypes = {
-  displayQuantityOfSide: React.PropTypes.number.isRequired,
-  navigation: React.PropTypes.bool,
-  enableHeading: React.PropTypes.bool,
-  enableScroll: React.PropTypes.bool,
-  active: React.PropTypes.number
+  displayQuantityOfSide: PropTypes.number.isRequired,
+  navigation: PropTypes.bool,
+  enableHeading: PropTypes.bool,
+  enableScroll: PropTypes.bool,
+  active: PropTypes.number
 };
 
 Coverflow.defaultProps = {
